@@ -1,0 +1,3 @@
+ldapwhoami -x -H ldap://ldap.inimit.com
+ldapwhoami -x -D "cn=Manager,dc=inimit,dc=com" -W
+ldapwhoami -x -H ldap://ldap.inimit.com -D "cn=Manager,dc=inimit,dc=com" -W

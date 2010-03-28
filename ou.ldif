@@ -1,0 +1,9 @@
+dn: ou=group,dc=inimit,dc=com
+objectClass: organizationalUnit
+ou: group
+description: Groups
+
+dn: ou=people,dc=inimit,dc=com
+objectClass: organizationalUnit
+ou: people
+description: People accounts

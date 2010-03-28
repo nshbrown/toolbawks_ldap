@@ -1,0 +1,35 @@
+dn: uid=root,ou=people,dc=inimit,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+uid: root
+cn: Super User
+givenName: Super
+mail: sysadmin@inimit.com
+sn: User
+uidNumber: 0
+gidNumber: 0
+homeDirectory: /home/root
+loginShell: /bin/tcsh
+userPassword: password
+
+dn: uid=nshb,ou=people,dc=inimit,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+cn: Nathaniel Brown
+uid: nshb
+givenName: Nathaniel
+mail: nshb@inimit.com
+sn: Brown
+uidNumber: 500
+gidNumber: 100
+homeDirectory: /home/nshb
+loginShell: /bin/tcsh
+userPassword: password

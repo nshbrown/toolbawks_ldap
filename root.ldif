@@ -1,0 +1,6 @@
+dn: dc=inimit,dc=com
+objectClass: dcObject
+objectClass: organization
+o: inimit
+dc: inimit
+description: Inimit Innovations Inc.

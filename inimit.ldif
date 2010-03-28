@@ -1,0 +1,65 @@
+# Root Organization
+dn: dc=inimit,dc=com
+objectClass: organization
+objectClass: dcObject
+o: inimit
+dc: inimit
+description: Inimit Innovations Inc.
+
+dn: ou=People,dc=inimit,dc=com
+objectClass: organizationalUnit             
+ou: People
+description: People, processes, printers    
+
+Coding of two branches under ou=People:
+dn: uid=root,ou=People,dc=example,dc=com,dc=au   
+objectClass: inetOrgPerson                       
+objectClass: organizationalPerson                
+objectClass: posixAccount                        
+objectClass: shadowAccount                       
+uid: root                                        
+cn: root                                         
+givenName: root                                  
+mail: root@inimit.com
+sn: root
+uidNumber: 0                                     
+gidNumber: 0                                     
+homeDirectory: /root                             
+loginShell: /bin/tcsh                            
+userPassword: rootpw
+
+dn: uid=nshb,ou=People,dc=inimit,dc=com
+objectClass: inetOrgPerson                       
+objectClass: organizationalPerson                
+objectClass: posixAccount                        
+objectClass: shadowAccount                       
+uid: nshb                                      
+cn: Nathaniel Brown
+givenName: Nathaniel
+mail: nshb@inimit.com
+sn: Brown
+uidNumber: 512
+gidNumber: 512
+homeDirectory: /home/nshb
+loginShell: /bin/tcsh
+userPassword: password
+
+
+Coding of two branches under ou=Group:
+
+dn: ou=Group,dc=inimit,dc=com
+objectClass: organizationalUnit
+ou: Group
+description: Group
+
+dn: cn=root,ou=group,dc=inimit,dc=com
+objectClass: posixGroup                          
+objectClass: top                                 
+cn: root
+gidNumber: 0
+
+dn: cn=bin,ou=group,dc=inimit,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: root
+gidNumber: 1
